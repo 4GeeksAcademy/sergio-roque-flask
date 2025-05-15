@@ -4,30 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Predicción de Diabetes</title>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const inputs = document.querySelectorAll('input[type="number"]');
-        
-        inputs.forEach(input => {
-            // Mostrar el rango cuando el campo está vacío
-            input.addEventListener('focus', function() {
-                if(this.value === '') {
-                    this.placeholder = '';
-                }
-            });
-            
-            // Restaurar el placeholder si no hay valor
-            input.addEventListener('blur', function() {
-                if(this.value === '') {
-                    this.placeholder = this.dataset.placeholder;
-                }
-            });
-            
-            // Guardar el placeholder original
-            input.dataset.placeholder = input.placeholder;
-        });
-    });
-    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
